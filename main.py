@@ -7,16 +7,16 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-BOT_USERNAME: Final = "@ecole_deconomie_ami_bot"
-TOKEN: Final = "6546110160:AAGoGP9aycdLoP_iVe9mQWxZzhPxGSYK2fA"
+BOT_USERNAME: Final = "Insert your bot username"
+TOKEN: Final = "Insert your token"
 
 
 # Initializing the model
 
-checkpoint_path = '/home/consent-flower/tinkoff/sirius-test-nlp-2023/model/checkpoint-5500'
-base_model = 'tinkoff-ai/ruDialoGPT-medium'
+checkpoint_path = "Insert your checkpoint path"
+base_model = "tinkoff-ai/ruDialoGPT-medium"
 
-device = 'cpu'
+device = "cpu"
 model = AutoModelWithLMHead.from_pretrained(checkpoint_path).to(device)
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 
@@ -30,8 +30,8 @@ def process_model_response(response: str) -> str:
 
 
 def get_model_response(prompt: str) -> str:
-    full_prompt = f'@@ПЕРВЫЙ@@ привет @@ВТОРОЙ@@ привет @@ПЕРВЫЙ@@ {prompt} @@ВТОРОЙ@@'
-    inputs = tokenizer(full_prompt, return_tensors='pt')
+    full_prompt = f"@@ПЕРВЫЙ@@ привет @@ВТОРОЙ@@ привет @@ПЕРВЫЙ@@ {prompt} @@ВТОРОЙ@@"
+    inputs = tokenizer(full_prompt, return_tensors="pt")
     generated_token_ids = model.generate(
         **inputs,
         top_k=10,
