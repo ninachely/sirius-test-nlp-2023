@@ -2,7 +2,9 @@
 Кейс по NLP для смены по ML от Тинькофф в Университете "Сириус"
 
 ### Некоторые примеры взаимодействия с ботом
-![ФКН](images/activities.png "Рис. 1")
+![Пары](images/classes.png "Рис. 1")
 
-![ВМК](images/msu.png "Рис. 2")
+![ФКН](images/activities.png "Рис. 2")
+
+![ВМК](images/msu.png "Рис. 3")
 
