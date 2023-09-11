@@ -18,3 +18,10 @@
 ![ФКН](images/activities.png "Рис. 2")
 
 ![ВМК](images/msu.png "Рис. 3")
+
+### Links
+
+- https://github.com/solemn-leader/sirius-test/tree/master
+- https://huggingface.co/docs/transformers/tasks/language_modeling
+- https://huggingface.co/tinkoff-ai/ruDialoGPT-medium
+- https://github.com/tinkoff-ai/pycon-chit-chat/blob/main/notebooks/lm_training.ipynb
